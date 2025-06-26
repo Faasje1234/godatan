@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="ScenarioPreset" load_steps=16 format=3 uid="uid://g7k677nhdumv"]
+[gd_resource type="Resource" script_class="ScenarioPreset" load_steps=16 format=3]
 
-[ext_resource type="Script" uid="uid://s18lhlb8j7t7" path="res://scenes/tile_deck.gd" id="1_kolyn"]
-[ext_resource type="Script" uid="uid://dl03g8asfcmpd" path="res://scenes/tile_side.gd" id="2_jwluo"]
-[ext_resource type="Script" uid="uid://b0tqoipxusvjx" path="res://scenes/scenario_preset.gd" id="3_2ykke"]
+[ext_resource type="Script" path="res://scenes/tile_deck.gd" id="1_7vudw"]
+[ext_resource type="Script" path="res://scenes/tile_side.gd" id="2_56doo"]
+[ext_resource type="Script" path="res://scenes/scenario_preset.gd" id="3_uv4vq"]
 
-[sub_resource type="Resource" id="Resource_7hgbx"]
-script = ExtResource("1_kolyn")
+[sub_resource type="Resource" id="Resource_u7uw4"]
+script = ExtResource("1_7vudw")
 name = "sea"
 tiles = Array[int]([6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6])
 numbers = Array[int]([])
@@ -15,8 +15,8 @@ unnumbered = Array[int]([])
 port_resources = Array[int]([1, 0, 4, 0, 3, 0, 2, 0, 5])
 ports_shuffled = true
 
-[sub_resource type="Resource" id="Resource_6sowl"]
-script = ExtResource("1_kolyn")
+[sub_resource type="Resource" id="Resource_pxmuf"]
+script = ExtResource("1_7vudw")
 name = "newworld"
 tiles = Array[int]([2, 1, 3, 4, 5, 6])
 numbers = Array[int]([6, 5, 4, 3, 2, 8, 9, 10, 11, 12])
@@ -26,8 +26,8 @@ unnumbered = Array[int]([7, 6])
 port_resources = Array[int]([])
 ports_shuffled = false
 
-[sub_resource type="Resource" id="Resource_dymxk"]
-script = ExtResource("1_kolyn")
+[sub_resource type="Resource" id="Resource_yl7nx"]
+script = ExtResource("1_7vudw")
 name = "land"
 tiles = Array[int]([7, 2, 2, 2, 2, 1, 1, 1, 1, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5])
 numbers = Array[int]([6, 6, 5, 5, 4, 4, 3, 3, 2, 8, 8, 9, 9, 10, 10, 11, 11, 12])
@@ -37,53 +37,53 @@ unnumbered = Array[int]([7])
 port_resources = Array[int]([])
 ports_shuffled = false
 
-[sub_resource type="Resource" id="Resource_fhdy4"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_nv47o"]
+script = ExtResource("2_56doo")
 tile = Vector2i(0, -3)
 side = 180
 
-[sub_resource type="Resource" id="Resource_3b7ci"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_oly46"]
+script = ExtResource("2_56doo")
 tile = Vector2i(-2, -3)
 side = 120
 
-[sub_resource type="Resource" id="Resource_mc3px"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_s052x"]
+script = ExtResource("2_56doo")
 tile = Vector2i(-3, -2)
 side = 120
 
-[sub_resource type="Resource" id="Resource_33n8e"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_n4rwy"]
+script = ExtResource("2_56doo")
 tile = Vector2i(-3, 0)
 side = 60
 
-[sub_resource type="Resource" id="Resource_n2jd3"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_7iqhw"]
+script = ExtResource("2_56doo")
 tile = Vector2i(-1, 2)
 side = 0
 
-[sub_resource type="Resource" id="Resource_c0kdm"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_8u7kf"]
+script = ExtResource("2_56doo")
 tile = Vector2i(1, 3)
 side = 0
 
-[sub_resource type="Resource" id="Resource_nlbl0"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_yf3vl"]
+script = ExtResource("2_56doo")
 tile = Vector2i(3, 3)
 side = -60
 
-[sub_resource type="Resource" id="Resource_ujpp0"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_gyt60"]
+script = ExtResource("2_56doo")
 tile = Vector2i(3, 1)
 side = -120
 
-[sub_resource type="Resource" id="Resource_ah0q1"]
-script = ExtResource("2_jwluo")
+[sub_resource type="Resource" id="Resource_apdgv"]
+script = ExtResource("2_56doo")
 tile = Vector2i(2, -1)
 side = -120
 
 [resource]
-script = ExtResource("3_2ykke")
+script = ExtResource("3_uv4vq")
 name = "ClassicExplorer"
 map = {
 Vector2i(-3, -3): "sea",
@@ -140,10 +140,10 @@ Vector2i(6, 3): "sea",
 Vector2i(6, 4): "sea",
 Vector2i(6, 5): "sea"
 }
-decks = Array[ExtResource("1_kolyn")]([SubResource("Resource_7hgbx"), SubResource("Resource_6sowl"), SubResource("Resource_dymxk")])
+decks = Array[ExtResource("1_7vudw")]([SubResource("Resource_u7uw4"), SubResource("Resource_pxmuf"), SubResource("Resource_yl7nx")])
 player_piece_set = {
 "city": 4,
 "road": 15,
 "town": 5
 }
-port_locations = Array[ExtResource("2_jwluo")]([SubResource("Resource_fhdy4"), SubResource("Resource_3b7ci"), SubResource("Resource_mc3px"), SubResource("Resource_33n8e"), SubResource("Resource_n2jd3"), SubResource("Resource_c0kdm"), SubResource("Resource_nlbl0"), SubResource("Resource_ujpp0"), SubResource("Resource_ah0q1")])
+port_locations = Array[ExtResource("2_56doo")]([SubResource("Resource_nv47o"), SubResource("Resource_oly46"), SubResource("Resource_s052x"), SubResource("Resource_n4rwy"), SubResource("Resource_7iqhw"), SubResource("Resource_8u7kf"), SubResource("Resource_yf3vl"), SubResource("Resource_gyt60"), SubResource("Resource_apdgv")])

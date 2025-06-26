@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cnlssqpge8erk"]
 
-[ext_resource type="Script" path="res://scenes/dice_roller/dice_roller.gd" id="1_h46j8"]
+[ext_resource type="Script" uid="uid://cj5ioy3cbhyq5" path="res://scenes/dice_roller/dice_roller.gd" id="1_h46j8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uauhm"]
 albedo_color = Color(0, 0.282353, 0, 1)
@@ -53,7 +53,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.551826, 2.33882, 19.6974)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)
-snap = 0.01
 use_collision = true
 flip_faces = true
 size = Vector3(10, 16, 8)

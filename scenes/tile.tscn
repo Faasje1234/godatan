@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://bbl0bydim321g"]
 
-[ext_resource type="Script" path="res://scenes/tile.gd" id="1_x1njl"]
+[ext_resource type="Script" uid="uid://8k01iivkpnls" path="res://scenes/tile.gd" id="1_x1njl"]
 [ext_resource type="PackedScene" uid="uid://cnpicxrr1lbxq" path="res://scenes/edge_interactor.tscn" id="2_8awwi"]
 [ext_resource type="Texture2D" uid="uid://cu3v03oy8n4ce" path="res://images/trail.svg" id="2_u1jya"]
 [ext_resource type="PackedScene" uid="uid://bue0minquvry" path="res://scenes/dice_number.tscn" id="3_xlall"]
-[ext_resource type="Script" path="res://scenes/interactive_camera_2d.gd" id="5_d71a8"]
+[ext_resource type="Script" uid="uid://cjqsqrhtj64mg" path="res://scenes/interactive_camera_2d.gd" id="5_d71a8"]
 
 [sub_resource type="Animation" id="Animation_8p3lq"]
 length = 0.001
@@ -43,9 +43,9 @@ resource_name = "number_glow"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m27dx"]
 _data = {
-"RESET": SubResource("Animation_8p3lq"),
-"flipout": SubResource("Animation_fjpxj"),
-"number_glow": SubResource("Animation_0gx5q")
+&"RESET": SubResource("Animation_8p3lq"),
+&"flipout": SubResource("Animation_fjpxj"),
+&"number_glow": SubResource("Animation_0gx5q")
 }
 
 [node name="Tile" type="RigidBody2D" groups=["tiles"]]

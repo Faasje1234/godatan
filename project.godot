@@ -12,12 +12,16 @@ config_version=5
 
 config/name="Cingara"
 run/main_scene="res://scenes/board.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://images/icon.svg"
 
 [autoload]
 
 Globals="*res://Globals.gd"
+
+[dotnet]
+
+project/assembly_name="Cingara"
 
 [rendering]
 
